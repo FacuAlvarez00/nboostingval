@@ -1,0 +1,159 @@
+.how-section {
+  background: var(--bg-1);
+  position: relative;
+}
+
+.how-section::before,
+.how-section::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-h), transparent);
+}
+.how-section::before { top: 0; }
+.how-section::after  { bottom: 0; }
+
+.how-header {
+  margin-bottom: 72px;
+}
+
+/* Steps */
+.steps-wrapper {
+  position: relative;
+  margin-bottom: 72px;
+}
+
+.steps-line {
+  position: absolute;
+  top: 36px;
+  left: calc(100% / 8);
+  right: calc(100% / 8);
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--border-h), var(--border-h), transparent);
+  display: none; /* visible only on desktop */
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+/* Each step */
+.step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.step-num-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.step-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--bg-2);
+  border: 2px solid var(--border-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  position: relative;
+  z-index: 1;
+  transition: border-color var(--tr), box-shadow var(--tr), background var(--tr);
+}
+
+.step-card:hover .step-circle {
+  background: var(--bg-3);
+  border-color: var(--red);
+  box-shadow: 0 0 20px var(--red-glow);
+}
+
+.step-num {
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--text-3);
+}
+
+.step-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.step-title {
+  font-size: 1.1rem;
+  color: var(--text-1);
+  margin: 0;
+}
+
+.step-desc {
+  font-size: 0.875rem;
+  color: var(--text-2);
+  line-height: 1.65;
+}
+
+/* CTA panel */
+.how-cta-panel {
+  background: linear-gradient(135deg, rgba(255,70,85,0.12) 0%, rgba(255,70,85,0.04) 100%);
+  border: 1px solid var(--border-h);
+  border-radius: var(--radius-lg);
+  padding: 40px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.cta-panel-text h3 {
+  font-size: 1.6rem;
+  color: var(--text-1);
+  margin-bottom: 6px;
+}
+
+.cta-panel-text p {
+  font-size: 0.95rem;
+  color: var(--text-2);
+}
+
+@media (min-width: 901px) {
+  .steps-line {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-cta-panel {
+    padding: 28px 24px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .how-cta-panel .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
