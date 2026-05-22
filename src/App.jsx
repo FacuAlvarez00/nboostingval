@@ -5,6 +5,7 @@ import Services from './components/Services'
 import HowItWorks from './components/HowItWorks'
 import OrderForm from './components/OrderForm'
 import Footer from './components/Footer'
+import DiscordButton from './components/DiscordButton'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <OrderForm />
       </main>
       <Footer />
+      <DiscordButton />
     </>
   )
 }

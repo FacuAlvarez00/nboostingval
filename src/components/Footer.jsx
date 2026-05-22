@@ -1,6 +1,6 @@
 import './Footer.css'
 
-const WA_NUMBER = '5491100000000'
+const WA_NUMBER = '56964012919'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -13,11 +13,10 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <a href="#hero" className="footer-logo" onClick={e => { e.preventDefault(); scrollTo('#hero') }}>
-              <span className="logo-icon">⬆</span>
-              <span className="logo-text">Rank<span>Up</span></span>
+              <span className="logo-text"><span>N</span> Boosting</span>
             </a>
             <p className="footer-tagline">
-              El servicio de elo boosting más confiable para Valorant, CS2 y Marvel Rivals.
+              El servicio de elo boosting más confiable de LATAM para Valorant.
               Resultados garantizados, privacidad total.
             </p>
             <a
@@ -76,11 +75,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="footer-bottom">
           <p className="footer-copy">
-            &copy; {year} RankUp. Todos los derechos reservados.
-          </p>
-          <p className="footer-disclaimer">
-            RankUp no está afiliado con Riot Games, Valve o Marvel Games.
-            Todos los nombres de juegos son propiedad de sus respectivos dueños.
+            &copy; {year} N Boosting. Todos los derechos reservados.
           </p>
         </div>
       </div>

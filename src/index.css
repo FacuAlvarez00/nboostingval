@@ -9,25 +9,25 @@
 
 :root {
   /* Colors */
-  --red:       #FF4655;
-  --red-dark:  #C8313E;
-  --red-glow:  rgba(255, 70, 85, 0.25);
-  --teal:      #00FFB2;
-  --teal-dark: #00CC8F;
-  --teal-glow: rgba(0, 255, 178, 0.2);
+  --red:       #00D4FF;
+  --red-dark:  #00A8CC;
+  --red-glow:  rgba(0, 212, 255, 0.18);
+  --teal:      #00E5A0;
+  --teal-dark: #00B87F;
+  --teal-glow: rgba(0, 229, 160, 0.18);
 
-  --bg-0:      #070D12;
-  --bg-1:      #0F1923;
-  --bg-2:      #162030;
-  --bg-3:      #1E2D3D;
-  --bg-card:   #111C26;
+  --bg-0:      #080808;
+  --bg-1:      #0E0E0E;
+  --bg-2:      #181818;
+  --bg-3:      #222222;
+  --bg-card:   #131313;
 
-  --text-1:    #ECE8E1;
-  --text-2:    #A8B2BB;
-  --text-3:    #5C6B77;
+  --text-1:    #F4F4F4;
+  --text-2:    #888888;
+  --text-3:    #4A4A4A;
 
-  --border:    rgba(255, 255, 255, 0.07);
-  --border-h:  rgba(255, 70, 85, 0.4);
+  --border:    rgba(255, 255, 255, 0.06);
+  --border-h:  rgba(255, 255, 255, 0.14);
 
   /* Typography */
   --font-head: 'Rajdhani', system-ui, sans-serif;
@@ -147,7 +147,7 @@ button {
 
 .btn-primary:hover {
   background: var(--red-dark);
-  box-shadow: 0 0 32px rgba(255, 70, 85, 0.45);
+  box-shadow: 0 0 32px rgba(0, 212, 255, 0.4);
   transform: translateY(-2px);
 }
 

@@ -4,29 +4,29 @@ const services = [
   {
     icon: '🚀',
     title: 'Elo Boost',
-    desc: 'Nuestro booster juega en tu cuenta desde tu rango actual hasta el rango deseado. Rápido y sin interrupciones.',
-    highlights: ['Boosters top ranked', 'VPN incluida', 'Modo offline disponible'],
+    desc: 'Jugamos en tu cuenta desde tu rango actual hasta el rango deseado. Rápido y sin interrupciones.',
+    highlights: ['Boosters top ranked', 'Agentes a elección', 'Modo offline disponible'],
     popular: true,
-  },
-  {
-    icon: '🏆',
-    title: 'Win Boost',
-    desc: 'Compra la cantidad de victorias que necesitas. Perfecto para salir de rachas negativas o para escalar rápido.',
-    highlights: ['Mínimo 1 victoria', 'Precio por victoria', 'Sin límite de cantidad'],
-    popular: false,
-  },
-  {
-    icon: '📋',
-    title: 'Placements',
-    desc: 'Nuestro equipo hace tus partidas de colocación para comenzar la temporada en el rango que mereces.',
-    highlights: ['Hasta 20 partidas', 'Máximo winrate posible', 'Recomendado inicio de temporada'],
-    popular: false,
   },
   {
     icon: '👥',
     title: 'Duo Boost',
     desc: 'Juega con uno de nuestros boosters en tu cuenta. Aprende, gana y sube sin ceder acceso a tu cuenta.',
-    highlights: ['Tu cuenta segura', 'Aprende con el booster', 'Comunicación por Discord'],
+    highlights: ['Acompañado por un booster', 'Aprende con un profesional', 'Comunicación constante'],
+    popular: false,
+  },
+   {
+    icon: '📋',
+    title: 'Placements',
+    desc: 'Jugamos hasta ganar las 5 placements para comenzar la temporada de la mejor manera posible.',
+    highlights: ['5 Victorias aseguradas', 'Recomendado inicio de temporada'],
+    popular: false,
+  },
+  {
+    icon: '🏆',
+    title: 'Win Boost',
+    desc: 'Compra la cantidad de victorias que necesitas (no son wins seguidas).',
+    highlights: ['Mínimo 5 wins', 'Precio por victoria'],
     popular: false,
   },
 ]
@@ -80,22 +80,22 @@ export default function Services() {
         <div className="trust-bar">
           <div className="trust-item">
             <span className="trust-icon">🔒</span>
-            <span>100% Seguro</span>
+            <span>Seguro y anonimo</span>
           </div>
           <div className="trust-divider" />
           <div className="trust-item">
             <span className="trust-icon">⚡</span>
-            <span>Inicio en &lt;1 hora</span>
+            <span>Inicio en menos de 24 horas</span>
           </div>
           <div className="trust-divider" />
           <div className="trust-item">
             <span className="trust-icon">🛡️</span>
-            <span>Garantía de resultado</span>
+            <span>Boost 100% garantizado</span>
           </div>
           <div className="trust-divider" />
           <div className="trust-item">
             <span className="trust-icon">💬</span>
-            <span>Soporte 24/7 por WhatsApp</span>
+            <span>Soporte 24/7 por Discord</span>
           </div>
         </div>
       </div>

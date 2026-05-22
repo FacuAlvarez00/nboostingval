@@ -9,7 +9,7 @@
 }
 
 .navbar.scrolled {
-  background: rgba(7, 13, 18, 0.92);
+  background: rgba(8, 8, 8, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   padding: 12px 0;
@@ -41,11 +41,13 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-1);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .logo-text span {
   color: var(--red);
+  margin-right: 2px;
 }
 
 /* Nav */
@@ -131,7 +133,7 @@
   flex-direction: column;
   gap: 4px;
   padding: 12px 24px 20px;
-  background: rgba(7, 13, 18, 0.97);
+  background: rgba(8, 8, 8, 0.97);
   border-top: 1px solid var(--border);
   max-height: 0;
   overflow: hidden;

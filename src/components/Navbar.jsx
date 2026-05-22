@@ -29,8 +29,7 @@ export default function Navbar() {
       <div className="container navbar-inner">
         {/* Logo */}
         <a href="#hero" className="navbar-logo" onClick={e => handleLink(e, '#hero')}>
-          <span className="logo-icon">⬆</span>
-          <span className="logo-text">Rank<span>Up</span></span>
+          <span className="logo-text"><span>N</span> Boosting</span>
         </a>
 
         {/* Desktop nav */}

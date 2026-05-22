@@ -32,14 +32,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  transition: transform var(--tr), border-color var(--tr), box-shadow var(--tr);
 }
 
-.service-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(255,70,85,0.25);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.3);
-}
 
 .service-card.popular {
   border-color: var(--border-h);
@@ -47,9 +41,6 @@
   box-shadow: 0 0 30px rgba(255,70,85,0.1);
 }
 
-.service-card.popular:hover {
-  box-shadow: 0 16px 48px rgba(255,70,85,0.2);
-}
 
 /* Popular badge */
 .popular-badge {

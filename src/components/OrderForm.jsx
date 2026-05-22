@@ -3,7 +3,7 @@ import './OrderForm.css'
 
 // ── WhatsApp number ──────────────────────────────────────────────
 // Cambiá esto por tu número real (solo dígitos, con código de país)
-const WA_NUMBER = '5491100000000'
+const WA_NUMBER = '56964012919'
 
 // ── Rank data by game ────────────────────────────────────────────
 const RANKS = {
@@ -46,12 +46,12 @@ const SERVICES = {
 }
 
 const REGIONS = {
-  Valorant:        ['LATAM', 'NA', 'EU', 'BR', 'AP'],
-  CS2:             ['LATAM', 'NA', 'EU', 'SA'],
-  'Marvel Rivals': ['NA', 'EU', 'APAC'],
+  Valorant:        ['LATAM', 'Brasil'],
+  CS2:             ['LATAM', 'Brasil'],
+  'Marvel Rivals': ['LATAM', 'Brasil'],
 }
 
-const GAMES = Object.keys(RANKS)
+const GAMES = ['Valorant']
 
 const WIN_OPTIONS = ['1', '2', '3', '5', '7', '10', '15', '20', '30', '50']
 const PLACEMENT_OPTIONS = ['1', '2', '3', '5', '10', '20']
@@ -312,12 +312,10 @@ export default function OrderForm() {
               <h4 className="aside-title">¿Por qué elegirnos?</h4>
               <ul className="aside-list">
                 {[
-                  { icon: '🔒', text: 'VPN activa durante todo el boost' },
-                  { icon: '⚡', text: 'Inicio garantizado en menos de 1 hora' },
-                  { icon: '🏆', text: 'Solo boosters top 500 / Radiant' },
-                  { icon: '🛡️', text: 'Modo offline disponible (anti-detección)' },
-                  { icon: '💬', text: 'Actualizaciones en tiempo real por WhatsApp' },
-                  { icon: '↩️', text: 'Reembolso si no se completa el pedido' },
+                  { icon: '🛡️', text: 'Jugamos en offline para mantener tu privacidad' },
+                  { icon: '⚡', text: 'Inicio garantizado en menos de 24 horas' },
+                  { icon: '🏆', text: 'Jugadores ex profesionales' },
+                  { icon: '💬', text: 'Soporte y novedades 24/7 a través de nuestro discord' },
                 ].map(i => (
                   <li key={i.text}>
                     <span className="aside-icon">{i.icon}</span>
@@ -331,9 +329,9 @@ export default function OrderForm() {
               <h4 className="aside-title">Preguntas frecuentes</h4>
               <div className="faq-list">
                 {[
-                  { q: '¿Es seguro?', a: 'Usamos VPN y modo offline para proteger tu cuenta al máximo.' },
-                  { q: '¿Cuánto tarda?', a: 'Depende del rango. En promedio 12-48 horas para divisiones completas.' },
-                  { q: '¿Cómo pago?', a: 'Transferencia, MercadoPago, cripto y otros métodos disponibles.' },
+                  { q: '¿Es seguro?', a: 'Gente confiable y de la escena, nos dedicamos a boostear hace 1 año.' },
+                  { q: '¿Cuánto tarda?', a: 'Depende del rango y nuestra demanda, tratamos de tenerlo terminado en 3 dias maximo.' },
+                  { q: '¿Cómo pago?', a: 'Transferencia bancaria, MercadoPago, cripto y otros métodos disponibles.' },
                 ].map(faq => (
                   <div key={faq.q} className="faq-item">
                     <span className="faq-q">{faq.q}</span>

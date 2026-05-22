@@ -31,18 +31,18 @@ export default function Hero() {
 
         <div className="hero-stats">
           <div className="stat">
-            <span className="stat-num">5,000+</span>
+            <span className="stat-num">150+</span>
             <span className="stat-label">Pedidos completados</span>
           </div>
           <div className="stat-divider" />
           <div className="stat">
-            <span className="stat-num">98%</span>
+            <span className="stat-num">100%</span>
             <span className="stat-label">Tasa de éxito</span>
           </div>
           <div className="stat-divider" />
           <div className="stat">
-            <span className="stat-num">24h</span>
-            <span className="stat-label">Tiempo promedio</span>
+            <span className="stat-num">#1</span>
+            <span className="stat-label">En LATAM</span>
           </div>
         </div>
 
